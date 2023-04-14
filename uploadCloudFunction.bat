@@ -1,0 +1,1 @@
+"D:\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-8ghe0w5nbd71f4cf --n quickstartFunctions --r --project "C:\Users\30310\Desktop\小程序\16岁当魔法少女" --report_first --report

@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/ground/ground",
+    "pages/mine/mine",
+    "pages/search/search",
+    "pages/publish/publish",
+    "pages/login/login",
+    "pages/published/published",
+    "pages/chat/chat",
+    "pages/introduce/introduce",
+    "pages/chat_info/chat_info",
+    "pages/cate/cate"
+  ],
+  "window": {
+    "backgroundColor": "#FFD301",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFD301",
+    "navigationBarTitleText": "北化咸鱼",
+    "navigationBarTextStyle": "black"
+  },
+  
+  "tabBar": {
+      "list": [
+        {
+              "pagePath": "pages/ground/ground",
+              "text": "广场",
+              "iconPath": "images/explore1.png",
+              "selectedIconPath": "images/explore2.png"
+              
+          },
+        {
+            "pagePath": "pages/mine/mine",
+            "text": "我的",
+            "iconPath": "images/mine2.png",
+            "selectedIconPath": "images/mine3.png"
+           
+        }
+
+       
+      ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

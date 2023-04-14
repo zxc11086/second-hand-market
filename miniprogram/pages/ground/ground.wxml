@@ -1,0 +1,35 @@
+<!--搜索框-->
+<view>
+    <SearchInput></SearchInput>
+    <!-- 轮播图-->
+    <view class="swiper">
+        <swiper autoplay indicator-dots circular indicator-active-color="white">
+            <swiper-item wx:for="{{swiperList}}" wx:key="id">
+              <image  src="{{item.picUrl}}" mode="widthFix"></image>
+            </swiper-item>   
+        </swiper>
+    </view>
+    <!-- 导航栏-->
+    <view class="cate">
+        <navigator wx:for="{{cateList}}" wx:key="id" url='../cate/cate?id={{item}}'>
+          <image mode="widthFix" src="{{item}}" class="cate_item"></image>
+        </navigator>
+    </view>
+</view>
+
+<view class='goodsList'>
+  <block wx:for='{{goodslist}}' wx:key="title">
+    <view class="list_item">
+        <navigator url='../introduce/introduce?goods_id={{item._id}}&openid={{item._openid}}&title={{item.title}}&info={{item.info}}&price={{item.price}}&p1={{item.photourl[0]}}&p2={{item.photourl[1]}}&p3={{item.photourl[2]}}'>
+          <view class='img'>
+            <image src="{{item.photourl[0]}}"  mode="scaleToFill"/>
+          </view>
+          <view class='info'>
+            <view class='title'>名称：{{item.title}}</view>
+            <view class='info'>详情：{{item.info}}</view>
+            <view class='price'>价格：{{item.price}}元</view>
+          </view>
+        </navigator>
+    </view>
+  </block>
+</view>

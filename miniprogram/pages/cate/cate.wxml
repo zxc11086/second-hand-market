@@ -1,0 +1,34 @@
+<view class='goodsList' > 
+    
+  <block wx:for='{{goodslist}}' wx:key="title">
+    <view class="list_item">
+        <navigator url='../introduce/introduce?goods_id={{item._id}}&openid={{item._openid}}&title={{item.title}}&info={{item.info}}&price={{item.price}}&p1={{item.photourl[0]}}&p2={{item.photourl[1]}}&p3={{item.photourl[2]}}'>
+          <view class='img'>
+            <image src="{{item.photourl[0]}}"  mode="scaleToFill"/>
+          </view>
+          <view class='info'>
+            <view class='title'>名称：{{item.title}}</view>
+            <view class='info'>详情：{{item.info}}</view>
+            <view class='price'>价格：{{item.price}}元</view>
+          </view>
+        </navigator>
+    </view>
+  </block>
+
+
+  <!-- <block wx:for='{{goodslist}}' wx:key='title'>
+  <view class="list_item">
+      <navigator url='../introduce/introduce?title={{item.title}}&info={{item.info}}&openid={{item._openid}}&price={{item.price}}&p1={{item.photourl[0]}}&p2={{item.photourl[1]}}&p3={{item.photourl[2]}}&goods_id={{item._id}}'>
+      <view class='img'>
+        <image src="{{item.photourl[0]}}"  mode="scaleToFill"/>
+      </view>
+      <view class='detail'>
+         <view class='info'>简介：{{item.info}}</view>
+        <view class='title'>名称：{{item.title}}</view>
+        <view class='price'>价格：{{item.price}}元</view>
+      </view>
+      </navigator>
+  </view>
+  </block> -->
+
+</view>

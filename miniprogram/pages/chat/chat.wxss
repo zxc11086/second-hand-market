@@ -1,0 +1,69 @@
+/* 有新消息的wxss */
+.list_item0{
+    display: flex;
+    /* padding-left: 40rpx; */
+    padding-top: 35rpx;
+    /* border: 1rpx solid#FFD301; */
+    margin-bottom: 10rpx;
+    border-radius: 66rpx;
+    box-shadow: 2rpx 2rpx 50rpx #ff0404;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    background-color: #535386;
+}
+
+/* 无新消息 */
+.list_item1{
+    display: flex;
+    /* padding-left: 40rpx; */
+    padding-top: 35rpx;
+    /* border: 1rpx solid#FFD301; */
+    margin-bottom: 10rpx;
+    border-radius: 66rpx;
+    box-shadow: 2rpx 2rpx 0rpx #86E3CE;
+    flex-direction: row;
+    align-items: center;
+    background-color: #535386;
+    position: relative;
+}
+
+.nickName{
+    display: flex;
+    margin-top: 15rpx;
+    margin-left: 300rpx;
+    color: #FFD301;
+    padding-bottom: 20rpx;
+    font-size: large;
+}
+
+.Img{
+    padding-bottom: 30rpx;
+    padding-left: 30rpx;
+    width: 50%;
+    float: left;
+}
+.list_item1 image{
+    width: 250rpx;
+    height: 200rpx;
+}
+.list_item0 image{
+    width: 250rpx;
+    height: 200rpx;
+}
+.time{
+    position: absolute; 
+    margin-right: 50rpx;
+    bottom: 0;
+    right: 0;
+}
+.msg{
+    display: flex;
+    margin-left: 330rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+

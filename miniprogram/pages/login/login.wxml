@@ -1,0 +1,7 @@
+<form bindsubmit="formSubmit">
+    <view>请选择头像</view>
+    <image class="avatar" src="{{Img}}" bindtap="chooseImg"></image>
+    <view>请输入昵称:</view>
+    <input name="nickName" type='string' value='{{nickName}}' bindblur='nickName'></input>
+    <button form-type='submit' class='sureRelease'>确认设置</button>
+</form>

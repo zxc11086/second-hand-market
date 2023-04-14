@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "SearchInput":"../../components/SearchInput/SearchInput"
+    },
+    "onReachBottomDistance": 200,
+    "enablePullDownRefresh": false,
+    "backgroundColor": "#86E3CE",
+    "backgroundTextStyle": "dark"
+}

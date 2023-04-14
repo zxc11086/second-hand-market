@@ -1,0 +1,52 @@
+<view class='friendsList'>
+  <block wx:for='{{friendsList}}' wx:key="title">
+    <view wx:if="{{item.userA_id==myopenid}}">
+      <!-- 未读消息 -->
+      <view class="list_item0" wx:if="{{item.Avisual==false}}">
+        <navigator url='../chat_info/chat_info?openid={{item.userB_id}}&id={{item._id}}'>
+          <view>
+            <image src="{{item.userB_Img}}" class='Img'></image>
+            <view class='nickName'>{{item.userB_nickName}}</view>
+            <view class='msg'>{{item.record[item.record.length-1].text}}</view>
+            <view class='time'>{{item.record[item.record.length-1].time}}</view>
+          </view>
+        </navigator>
+      </view>
+      <!-- 已读消息 -->
+      <view class="list_item1" wx:if="{{item.Avisual==true}}">
+        <navigator url='../chat_info/chat_info?openid={{item.userB_id}}&id={{item._id}}'>
+          <view>
+            <image src="{{item.userB_Img}}" class='Img'></image>
+            <view class='nickName'>{{item.userB_nickName}}</view>
+            <view class='msg'>{{item.record[item.record.length-1].text}}</view>
+            <view class='time'>{{item.record[item.record.length-1].time}}</view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view wx:if="{{item.userB_id==myopenid}}">
+      <!-- 未读消息 -->
+      <view class="list_item0" wx:if="{{item.Bvisual==false}}">
+        <navigator url='../chat_info/chat_info?openid={{item.userA_id}}&id={{item._id}}'>
+          <view>
+            <image src="{{item.userA_Img}}" class='Img'></image>
+            <view class='nickName'>{{item.userA_nickName}}</view>
+            <view class='msg'>{{item.record[item.record.length-1].text}}</view>
+            <view class='time'>{{item.record[item.record.length-1].time}}</view>
+          </view>
+        </navigator>
+      </view>
+      <!-- 已读消息 -->
+      <view class="list_item1" wx:if="{{item.Bvisual==true}}">
+        <navigator url='../chat_info/chat_info?openid={{item.userA_id}}&id={{item._id}}'>
+          <view>
+            <image src="{{item.userA_Img}}" class='Img'></image>
+            <view class='nickName'>{{item.userA_nickName}}</view>
+            <view class='msg'>{{item.record[item.record.length-1].text}}</view>
+            <view class='time'>{{item.record[item.record.length-1].time}}</view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </block>
+</view>

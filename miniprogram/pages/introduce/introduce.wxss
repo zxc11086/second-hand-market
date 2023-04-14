@@ -1,0 +1,42 @@
+.page{
+    background-color: #535386;
+}
+
+.information{
+    display: block;
+    padding: 15rpx;
+    border: 1rpx solid#86E3CE;
+    margin: 15rpx;
+    border-radius: 8rpx;
+    box-shadow: 1rpx 1rpx 15rpx #86E3CE;
+    background-color: #535386;
+}
+.Notice{
+    color: red;
+}
+
+.Want{
+    color:white;
+    background-color: #535386;
+}
+
+.publisher{
+    display: flex;
+    flex-direction: row;
+}
+.publisher image{
+    width: 150rpx;
+    height: 150rpx;
+}
+
+.swiper-container{
+    width: 100%;
+    border: 1px solid #a0f3e0;
+    
+}
+.object{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}

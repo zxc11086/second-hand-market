@@ -1,0 +1,25 @@
+<view class="userInfo">
+    <view class="box" bindtap="gotoLogin">
+        <image src="{{Img}}"></image>
+        <view class="text">{{nickName}}</view>
+    </view>
+</view>
+
+<button class="publish-button" bindtap="gotoPublish">
+    发布
+</button>
+
+<button class="published-button" bindtap="gotoPublished">
+    我发布的
+</button>
+
+<button class="chat-button" bindtap="gotoChat">
+    我的消息
+</button>
+
+<button open-type="contact" bindcontact="handleContact" session-from="sessionFrom" class="main-button">
+    客服
+</button>
+
+
+<!-- <image src="cloud://cloud1-8ghe0w5nbd71f4cf.636c-cloud1-8ghe0w5nbd71f4cf-1310071695/祢豆子.jpg" mode="scaleToFill" class="bottom-image"></image> -->

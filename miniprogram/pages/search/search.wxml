@@ -1,0 +1,20 @@
+<view class="search_row">
+    <input placeholder="请输入您要搜索的商品名称" bindinput="handleInput"></input>
+</view>
+<view class='goodsList'>
+  <block wx:for='{{goods_Array}}' wx:key="title">
+    <view class="list_item">
+        <navigator url='../introduce/introduce?goods_id={{item._id}}&openid={{item._openid}}&title={{item.title}}&info={{item.info}}&price={{item.price}}&p1={{item.photourl[0]}}&p2={{item.photourl[1]}}&p3={{item.photourl[2]}}'>
+          <view class='img'>
+            <image src="{{item.photourl[0]}}"  mode="scaleToFill"/>
+          </view>
+          <view class='info'>
+            <view class='title'>名称：{{item.title}}</view>
+            <view class='info'>详情：{{item.info}}</view>
+            <view class='price'>价格：{{item.price}}元</view>
+          </view>
+        </navigator>
+    </view>
+  </block>
+</view>
+

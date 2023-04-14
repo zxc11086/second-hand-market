@@ -1,0 +1,36 @@
+.page{
+    background-color: #535386;
+}
+
+.list_item{
+    display: block;
+    padding: 15rpx;
+    border: 1rpx solid#86E3CE;
+    margin: 15rpx;
+    border-radius: 8rpx;
+    box-shadow: 1rpx 1rpx 15rpx #86E3CE;
+    background-color: #FFD301;
+}
+.detail{
+    display: block;
+    text-align: left;
+    font-size: 40rpx;
+    padding-top: 20rpx;
+    padding-left: 25rpx;
+}
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info{
+    font-size: 32rpx;
+}
+
+.remove{
+    background-color: #535386;
+}
+
+.text{
+    color: #ffffff;
+}

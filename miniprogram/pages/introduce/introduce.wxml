@@ -1,0 +1,23 @@
+<view class="swiper" wx:if="{{myopenid!=''}}">
+        <swiper autoplay indicator-dots circular class="swiper-container" indicator-active-color="white" style="height:{{Height}}px"> 
+            <swiper-item wx:for="{{photoUrl}}" wx:key="id">
+                <image mode="widthFix" src="{{item}}" class="object" bindload="getHeight"  bindtap='clickImg'></image>
+            </swiper-item>   
+        </swiper>
+        <view class="information">
+            <view>发布者：</view>
+            <view class="publisher" >
+                <image src="{{Img}}" class="Img"/>
+                <view class="info">{{nickName}}</view>
+            </view>
+            <view >商品名称：{{title}}</view>
+            <view >商品详情：{{info}}</view>
+            <view >商品价格：{{price}}</view>
+            <view class="Notice">为了您的财产安全，暂不支持线上支付，请线下面交</view>
+        </view>
+        <navigator url='../chat_info/chat_info?title={{title}}&info={{info}}&openid={{openid}}&price={{price}}&p1={{photoUrl[0]}}&p2={{photoUrl[1]}}&p3={{photoUrl[2]}}&id={{goods_id}}'>
+            <button class="Want" >
+                我想要
+            </button>
+        </navigator>
+    </view>

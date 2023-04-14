@@ -1,0 +1,18 @@
+<view class='goodsList'>
+  <block wx:for='{{goods_Arrays}}' wx:key="title">
+    <view class="list_item">
+      <view class='img'>
+        <image src="{{item.photourl[0]}}"  mode="scaleToFill"/>
+      </view>
+      <view class='detail'>
+        <view class='info'>简介：{{item.info}}</view>
+        <view class='title'>名称：{{item.title}}</view>
+        <view class='price'>价格：{{item.price}}元</view>
+      </view>
+      <button class="remove" bindtap="remove" data-value="{{item._id}}">
+        <view class="text">下架</view>
+      </button>
+    </view>
+  </block>
+</view>
+

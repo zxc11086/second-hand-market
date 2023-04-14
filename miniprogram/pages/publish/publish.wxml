@@ -1,0 +1,45 @@
+<!--商品发布-->
+<form bindsubmit="formSubmit">
+  <!--商品名称-->
+  <view class='title'>
+    <view class='title_text'>
+      <text>商品名称:</text>
+      <input name="title" type='text' value='{{title}}' bindblur='titleBlur'></input>
+    </view>
+  </view>
+  <!--商品价格-->
+  <view class='title'>
+    <view class='title_text'>
+      <text>商品价格:</text>
+      <input name="price" type='digit' value='{{price}}' bindblur='priceBlur'></input>
+    </view>
+  </view>
+  <!--商品信息-->
+  <view class='info-point'>
+    <view class='title_text'>
+      <text>商品信息:</text>
+      <textarea name="info" class='textarea' value='{{info}}' bindblur='infoBlur'></textarea>
+    </view>
+  </view>
+
+  <!--上传图片-->
+  <view class='upImv'>
+    <view class='upImv_text'>详情图片上传</view>
+    <view class="addImv">
+      <!--这个是已经选好的图片-->
+      <view wx:for="{{detail}}" wx:key="key" class="upFile" bindtap="showImageDetail" style="border-radius: 5px" data-id="{{index}}">
+        <image class="itemImv" src="{{item}}"></image>
+        <image class="closeImv" src="../../images/icon/deletphoto.png" mode="scaleToFill" catchtap="deleteImvDetail" data-id="{{index}}"></image>
+      </view>
+      <!--这个是选择图片-->
+      <view class="chooseView" bindtap="chooseDetail" wx:if="{{chooseViewShowDetail}}">
+        <image class="chooseImv" src="../../images/icon/addphoto.png"></image>
+      </view>
+    </view>
+  </view>
+  <button form-type='submit' class='sureRelease'>确认发布</button>
+</form>
+
+<view>
+    <image src="cloud://cloud1-8ghe0w5nbd71f4cf.636c-cloud1-8ghe0w5nbd71f4cf-1310071695/69c46521c904e807f2a4f1b404755bf.jpg" mode="aspectFill" class="bottom-img"/>
+</view>
